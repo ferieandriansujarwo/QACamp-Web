@@ -1,8 +1,11 @@
-# Lesson 3 - XPath
+# Lesson 3 - Selector
 
 ## Lesson Goals
 
 Berikut adalah tujuan dari lesson ini
+- _Mengerti apa itu Selector_
+- _Mengerti guna dari CSS_
+- _Mengerti cara menggunakan CSS_
 - _Mengerti guna dari XPath_
 - _Mengerti cara menggunakan XPath_
 
@@ -19,10 +22,21 @@ Berikut adalah struktur proyek untuk Lesson 3
         └── web_steps.rb
 ```
 
-## Apa itu XPath?
-_XPath_ adalah sebuah notasi (_selector_) yang digunakan untuk menemukan elemen tertentu pada halaman web. Untuk bisa menggunakan _XPath_ akan lebih baik jika anda mengenal HTML terlebih dahulu. Kamu bisa lihat [disini](https://www.w3schools.com/html/). Anda dapat menggunakan _XPath_ pada _Capybara_ untuk membantu anda menemukan elemen pada web.
+## Apa itu Selector?
+_Selector_ adalah sebuah format yang digunakan oleh library seperti _Selenium_ dan _Capybara_ untuk menemukan elemen pada web seperti gambar, tulisan, tombol, dan sebagainya. Untuk bisa menggunakan _Selector_ akan lebih baik jika anda mengenal HTML terlebih dahulu. Kamu bisa lihat materinya [disini](https://www.w3schools.com/html/).
 
-## Cara Menggunakan XPath
+## Apa itu CSS?
+_CSS_ adalah sebuah notasi (_selector_) yang digunakan untuk menemukan elemen tertentu pada halaman web. CSS sendiri digunakan oleh web developer untuk memberikan _style_ pada halaman web seperti warna, besar dan lebar gambar, bentuk tombol, dan berbagai fungsi lainnya. Properti-properti pada CSS ini bisa kita manfaatkan untuk mendeteksi sebuah elemen pada web. 
+
+## Cara Menggunakan CSS
+Sebenarnya kita sudah menggunakan syntax CSS pada lesson sebelumnya. Yaitu `#login_link`. Dimana kita memanfaatkan elemen `id` pada tombol login untuk mendeteksi keberadaan tombol login.
+
+Materi mengenai CSS sendiri sangat luas, sehingga kamu bisa baca mengenai CSS lebih lanjut [disini](https://www.w3schools.com/css/).
+
+## Apa itu XPath?
+_XPath_ adalah sebuah notasi (_selector_) yang digunakan untuk menemukan elemen tertentu pada halaman web. _Xpath_ memiliki bentuk syntax yang lebih fleksibel jika dibandingkan dengan CSS. Sehingga lebih umum digunakan untuk mencari elemen web yang tidak bisa dicari oleh _selector_ CSS.
+
+## Mengapa Memakai XPath?
 Misalkan saya punya halaman web dengan format HTML seperti ini ...
 ```html
 <div class="parent">
@@ -54,7 +68,9 @@ find(:xpath, '//div/div/img[@id="ayam_image"]')
 ```
 Dan sebagainya ...
 
-Intinya, _XPath_ menawarkan banyak metode alternatif untuk mencari suatu elemen pada halaman web. _XPath_ lebih umum digunakan untuk mencari elemen yang sulit ditemukan oleh _selector_ CSS.
+Intinya, _XPath_ menawarkan banyak metode alternatif untuk mencari suatu elemen pada halaman web.
+
+Materi mengenai _XPath_ sendiri sangat luas, sehingga kamu bisa baca mengenai CSS lebih lanjut [disini](https://www.w3schools.com/xml/xpath_intro.asp).
 
 ## Implementasi Proyek
 Sekarang saya ingin memastikan apakah section Pencarian Populer ada pada halaman homepage Bukalapak. Kemudian saya menambahkan sebuah _step_ pada file Gherkin saya.
