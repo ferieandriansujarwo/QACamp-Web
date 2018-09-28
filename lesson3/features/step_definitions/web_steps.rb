@@ -8,5 +8,6 @@ Then("I will see button Login") do
 end
 
 Then("I will see Pencarian Populer section") do
+    sleep 3
     expect(page).to have_xpath("//*[text()='Pencarian Populer']")
 end

@@ -61,10 +61,11 @@ Kemudian disini kita ingin memastikan apakah login button ada pada halaman homep
 
 ```rb
 Then("I will see Pencarian Populer section") do
+    @home.wait_for_pencarian_populer(10)
     expect(@home).to have_pencarian_populer
 end
 ```
-Sama halnya dengan Login Button, disini kita ingin memastikan apakah section Pencarian Populer ada pada halaman homepage. Anda cukup melakukan ini.
+Sama halnya dengan Login Button, disini kita ingin memastikan apakah section Pencarian Populer ada pada halaman homepage. Anda cukup melakukan ini. Disini, fungsi `wait_for` digunakan untuk menggantikan `sleep`. Fungsi ini lebih elegan karena akan menunggu elemen terkait untuk di load oleh browser maksimal selama 10 detik. Jika elemen sudah dapat di load dibawah 10 detik, maka kode akan terus dilanjutkan tanpa perlu menunggu sampai 10 detik. Solusi yang cukup efisien dan lumayan elegan (menurut saya).
 
 Secara general, syntax milik _SitePrism_ lebih intuitif dan lebih singkat jika dibandingkan dengan syntax _Capybara_ biasa. Hal ini cukup mudah apabila kita sering menggunakan suatu elemen berulang-ulang. Kode juga lebih mantainable dengan cara ini karena apabila terdapat perubahan, kita cukup mengganti value dari _selector_ pada file page. Keren bukan?
 

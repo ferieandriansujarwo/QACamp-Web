@@ -8,5 +8,6 @@ Then("I will see button Login") do
 end
 
 Then("I will see Pencarian Populer section") do
+    @home.wait_for_pencarian_populer(10)
     expect(@home).to have_pencarian_populer
 end

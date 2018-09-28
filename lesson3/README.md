@@ -90,9 +90,11 @@ Kemudian pada file `web_steps.rb` saya menambahkan implementasi menggunakan fung
 ##### web_steps.rb
 ```rb
 Then("I will see Pencarian Populer section") do
+    sleep 3
     expect(page).to have_xpath("//*[text()='Pencarian Populer']")
 end
 ```
+Disini saya harus menggunakan `sleep` untuk menunggu section Pencarian Populer diload pada halaman browser. Hal ini tentunya kurang elegan. Solusi akan permasalahan ini akan dijelaskan pada lesson selanjutnya
 
 ## Tugas Lesson 3
 Install dahulu dependensi menggunakan command berikut
