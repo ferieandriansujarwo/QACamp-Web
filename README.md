@@ -56,8 +56,8 @@ sudo chmod 0755 /usr/local/bin/chromedriver
 
 Kemudian download projek menggunakan clone
 ```
-git clone https://github.com/luthfiswees/QACamp-API.git
-cd QACamp-API
+git clone https://github.com/luthfiswees/QACamp-Web.git
+cd QACamp-Web
 ```
 
 Sekarang anda sudah siap untuk belajar!
@@ -104,8 +104,8 @@ sudo chmod 0755 /usr/local/bin/chromedriver
 
 Kemudian download projek menggunakan clone
 ```
-git clone https://github.com/luthfiswees/QACamp-API.git
-cd QACamp-API
+git clone https://github.com/luthfiswees/QACamp-Web.git
+cd QACamp-Web
 ```
 
 Sekarang anda sudah siap untuk belajar!
