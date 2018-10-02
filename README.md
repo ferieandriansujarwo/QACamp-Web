@@ -44,12 +44,7 @@ Ganti <NAMA_ANDA> dengan nama anda dan <EMAIL_ANDA> dengan email yang anda gunak
 
 Selanjutnya, anda perlu menginstall Chromedriver. Versi yang kita gunakan adalah versi 2.42
 
-Untuk MacOS Sierra:
-```
-brew install chromedriver
-```
-
-Untuk MacOS Mojave:
+Untuk MacOS Sierra-Mojave:
 ```
 brew cask install chromedriver
 ```
