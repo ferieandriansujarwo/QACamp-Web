@@ -43,20 +43,20 @@ git config --global user.email "<EMAIL_ANDA>"
 Ganti <NAMA_ANDA> dengan nama anda dan <EMAIL_ANDA> dengan email yang anda gunakan untuk mendaftar akun Github.
 
 Selanjutnya, anda perlu menginstall Chromedriver. Versi yang kita gunakan adalah versi 2.42
-```
-brew install unzip
 
-curl http://chromedriver.storage.googleapis.com/2.42/chromedriver_mac64.zip -o chromedriver_mac64.zip
-unzip chromedriver_mac64.zip -d
-rm chromedriver_mac64.zip
-sudo mv -f chromedriver /usr/local/bin/chromedriver
-sudo chown root:root /usr/local/bin/chromedriver
-sudo chmod 0755 /usr/local/bin/chromedriver
+Untuk MacOS Sierra:
+```
+brew install chromedriver
+```
+
+Untuk MacOS Mojave:
+```
+brew cask install chromedriver
 ```
 
 Kemudian download projek menggunakan clone
 ```
-git clone https://github.com/luthfiswees/QACamp-Web.git
+git clone https://github.com/ferieandriansujarwo/QACamp-Web
 cd QACamp-Web
 ```
 
@@ -104,7 +104,7 @@ sudo chmod 0755 /usr/local/bin/chromedriver
 
 Kemudian download projek menggunakan clone
 ```
-git clone https://github.com/luthfiswees/QACamp-Web.git
+git clone https://github.com/ferieandriansujarwo/QACamp-Web
 cd QACamp-Web
 ```
 
