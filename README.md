@@ -44,9 +44,16 @@ Ganti <NAMA_ANDA> dengan nama anda dan <EMAIL_ANDA> dengan email yang anda gunak
 
 Selanjutnya, anda perlu menginstall Chromedriver. Versi yang kita gunakan adalah versi 2.42
 
-Untuk MacOS Sierra-Mojave:
 ```
-brew cask install chromedriver
+cd 
+
+curl http://chromedriver.storage.googleapis.com/2.42/chromedriver_mac64.zip -o chromedriver_mac64.zip
+
+unzip chromedriver_mac64.zip -d ~/chromedriver
+
+cd chromedriver
+
+cp chromedriver /Users/luthfikurniaputra/.rvm/gems/ruby-2.5.1/bin/chromedriver
 ```
 
 Kemudian download projek menggunakan clone
@@ -89,12 +96,15 @@ Selanjutnya, anda perlu menginstall Chromedriver. Versi yang kita gunakan adalah
 ```
 sudo apt-get install unzip
 
-wget -N http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip -P ~/
+cd 
+
+curl http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip -o chromedriver_linux64.zip
+
 unzip chromedriver_linux64.zip -d ~/
-rm ~/chromedriver_linux64.zip
-sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
-sudo chown root:root /usr/local/bin/chromedriver
-sudo chmod 0755 /usr/local/bin/chromedriver
+
+cd chromedriver
+
+cp chromedriver /Users/luthfikurniaputra/.rvm/gems/ruby-2.5.1/bin/chromedriver
 ```
 
 Kemudian download projek menggunakan clone
